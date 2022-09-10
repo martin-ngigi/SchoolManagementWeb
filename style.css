@@ -1,0 +1,155 @@
+/*for slider*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+*
+{
+	padding: 0;
+	margin: 0;
+	/*box-sizing: border-box;*/
+	/*font-family: "Poppins", sans-serif;*/
+}
+
+nav
+{
+	position: fixed;
+	background-color: skyblue;
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+}
+
+.logo
+{
+	font-size: 25px;
+	position: relative;
+	left: 5%;
+	color: black;
+	font-weight: bold;
+	line-height: 70px;
+
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+ul{
+	position: relative;
+	float: right;
+	margin-right: 20px;
+}
+
+ul li{
+	display: inline-block;
+	line-height: 70px;
+	margin: 0 5px;
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+}
+
+.main_img
+{
+	width: 100%;
+	height: 450px;
+}
+
+.section1
+{
+	padding-top: 70px; 
+}
+
+.img_text
+{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	color: white;
+	background-color: midnightblue;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 35px;
+}
+
+.welcome_img
+{
+	width: 100%;
+	height: 250px;
+}
+
+.container
+{
+	 padding-top: 70px; 
+}
+
+.teacher
+{
+	width: 80%;
+	height: 250px;
+}
+
+.course{
+	width: 100%;
+	height: 200px;
+}
+
+.label_text
+{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding: 10px;
+}
+
+.adm{
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.input_deg
+{
+	width: 30%;
+	height: 40px;
+	border-radius: 15px;
+	border: 1px solid blue;
+}
+
+.adm_int
+{
+	padding-top: 10px; 
+}
+
+/*. is used for class*/
+.input_txt
+{
+	width: 30%;
+	height: 120px;
+	border-radius: 15px;
+	border: 1px solid blue;
+}
+
+
+/*# is used for id*/
+#submit
+{
+	position: relative;
+	width: 15%;
+	left: 5%;
+}
+
+footer
+{
+	background-color: black;
+	height: 100px;
+	width: 100%;
+}
+
+.footer_text
+{
+	text-align: center;
+	color: white;
+	top: 20%;
+	position: relative;
+}
