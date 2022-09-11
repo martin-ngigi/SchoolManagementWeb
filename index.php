@@ -21,7 +21,7 @@
 			<li><a href="">Home</a></li>
 			<li><a href="">Contact</a></li>
 			<li><a href="">Admission</a></li>
-			<li><a href="" class="btn btn-success">Login</a></li>
+			<li><a href="login.php" class="btn btn-success">Login</a></li>
 		</ul>
 	</nav>
 	<div class="section1">
