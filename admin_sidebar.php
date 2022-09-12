@@ -13,7 +13,7 @@
 			<a href="add_student.php">Add Student</a>
 		</li>
 		<li>
-			<a href="">View Student</a>
+			<a href="view_student.php">View Student</a>
 		</li>
 		<li>
 			<a href="">Add Teacher</a>
