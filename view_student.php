@@ -47,7 +47,6 @@ session_start();
 		.table_td
 		{
 			padding: 5px;
-
 		}
 	</style>
 	
