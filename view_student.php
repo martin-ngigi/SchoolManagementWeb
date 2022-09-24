@@ -1,6 +1,8 @@
 
 <?php
 
+//4. dont show any uncessary warnings and messages.
+error_reporting(0);
 session_start();
 
 	//get the username from login page that was sent to studenthome
@@ -58,12 +60,25 @@ session_start();
 	<div class="content">
 		<center>
 			<h1> Students Data</h1>
+
+			<?php
+			//3. check if there is any message after deleting
+			if ($_SESSION['message']) {
+				echo $_SESSION['message'];
+			}
+
+			//5. after refresshing the browser, remove the message
+			unset($_SESSION['message']);
+
+			?>
+
 		<table border="1px">
 			<tr>
 				<th class="table_th">UserName</th>
 				<th class="table_th">Email</th>
 				<th class="table_th">Phone</th>
 				<th class="table_th">Password</th>
+				<th class="table_th">Delete</th>
 			</tr>
 
 			<?php
@@ -76,6 +91,10 @@ session_start();
 					<td class="table_td"><?php echo "{$info['email']}";?></td>
 					<td class="table_td"><?php echo "{$info['phone']}";?></td>
 					<td class="table_td"><?php echo "{$info['password']}";?></td>
+					<td class="table_td"><?php echo "<a onClick=\"javascript:return confirm('Are You Sure You Want To delete This ?');\" href='delete.php?student_id={$info['id']}'>Delete</a>";?></td>
+					<!-- ..href='delete.php?student_id={$info['id']}.. means -> after clicking delete button, take/pass specific id of the current student to delete.php -->
+
+					<!-- ..onClick=\"javascript:return confirm('Are You Sure You Want To delete This ?');\.. -> Show Confirmation message  -->
 				</tr>
 
 			<?php
